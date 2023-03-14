@@ -2,22 +2,21 @@ This section describes the group assignment.
 
 \subsection*{Teams}
 
-
 Form groups of around 4 students (5 is the maximum). Your tutorial teacher will help you with this.
 
 \subsection*{Datasets}
-Together with your group, you can select from one of two datasets
+Together with your group, you can select from one of the following datasets:
+
 \begin{enumerate}
-	\item Dataset on podcasts:  \url{https://www.kaggle.com/listennotes/all-podcast-episodes-published-in-december-2017}
-	This link will lead you to two .csv files. You and your group may decide yourself whether you want to work with one of the files, or combine both of them.
-	\item Dataset on books. More specifically \texttt{google\_books\_1299.csv}: \url{https://www.kaggle.com/bilalyussef/google-books-dataset?select=google_books_1299.csv}. 
+	\item \emph{Podcast dataset}:  \url{https://www.kaggle.com/datasets/roman6335/13000-itunes-podcasts-april-2018}
+	\item \emph{News dataset}: \url{https://www.kaggle.com/datasets/szymonjanowski/internet-articles-data-with-users-engagement?select=articles_data.csv}
+	\item \emph{Books dataset}: More specifically \texttt{google\_books\_1299.csv}: \url{https://www.kaggle.com/bilalyussef/google-books-dataset?select=google_books_1299.csv}. 
 \end{enumerate}
 
-For both datasets, it is important to note that ∂you do not need to consider all the columns. Make a selection of relevant variables yourself, and argue in your assignment why you have decided to include or exclude specific information. 
+When working with one of these datasets, it's crucial to note that not all columns need to be taken into consideration. You should choose the relevant variables yourself and provide justification in your assignment for including or excluding specific information.
 
-This dataset will form the basis of the assignment. Your task is to explore this dataset, describe it in a meaningful, data-scientific way, and ultimately, to build a recommender system.
-
-The group assignment consists of three tasks: Writing a research report, exploring a dataset, and building a simple knowledge-based or content-based recommender system. Specifically, the following tasks are part of this assignment:
+The assignment will be centered around the choosen dataset. Your objective is to analyze the dataset in a data-scientific manner, and ultimately develop a recommender system.
+The group assignment comprises three tasks: a written research report, code for exploring the dataset, and code for creating a simple knowledge-based or content-based recommender system. 
 
 \section{Write a research report (30\% of final grade)}
 
@@ -25,38 +24,37 @@ The research report consists of...
 
 \subsubsection{Method section}
 \begin{itemize}
-	\item A description of the steps you took, which type of variables were selected and how they were transformed.
-	\item Explain your analytical strategy;
-	\item What techniques (and why) will you be using to describe the dataset?
-	\item What type of recommender system are you building? Why?  
+	\item Provide a detailed account of the steps you took, including the selection of variables, their types and how they were transformed. Describe your analytical strategy in detail.
+	\item Describe the analytical strategy: i.e., the type of analytical strategy to be used to explore the dataset, such as visualizing the data, providing summary statistics with regards to variables, and/or using an inductive technique for text analysis, such as topic modelling to describe topics present in the data. Explain the techniques you plan to use to describe the dataset, and the reasons behind your choice of these techniques.
+	\item Specify the type of recommender system you are developing and the rationale for choosing this type.
 \end{itemize}
 
 \subsubsection{Result section}
 \begin{itemize}
 	\item A description of the dataset (how many observations, what type of variables)
-	\item Results of the inductive analysis (e.g., description of the topics you've found).
-	\item Demonstration of the recommender system; explanation of how it works, and some examples from the type of recommendations you get for different types of input.
+	\item Results of the explorative analysis (e.g., description of the topics you've found).
+	\item Written demonstration of the recommender system: showcase the recommender system by providing an explanation of its workings, and demonstrating examples of the recommendations that can be generated for different types of input.
 \end{itemize}
 
-\section{Explorative data analysis (30\% of final grade)}
+\section{Code for explorative data analysis (30\% of final grade)}
 
 Explore, pre-process, and clean the dataset, and provide some descriptive analyses.
 
 \begin{itemize}
-	\item  Explore the dataset, and inspect what type of relevant variables are present, what data can be used. Select which variables might be of interest and can be used later on.
-	\item Feature engineering is an important step here (keeping in mind the type of descriptive analysis you want to conduct in step 2). The literature and code examples from week 1 and week 2 should help you here.
+	\item Explore the dataset, and inspect what type of relevant variables are present, what data can be used. Select which variables might be of interest and can be used later on.
+	\item Feature engineering is an important step here (keeping in mind the type of descriptive analysis you want to conduct in step 2). 
 	\item Describe the dataset using an inductive analysis.
-	\item Provide a clear description of data you will be working with. E.g., describe the most interesting variables in terms of data `type`, number of unique observations, mean, distribution, etc.
-	\item  Plotting the data, to visualise some of the relations in the dataset, is appreciated.
-	\item  Describe the dataset using some of the techniques as discussed in week 3 and week 4. For example, apply LDA to describe the number of topics present in the dataset.
+	\item Provide a clear description of data you will be working with. For example, describe the most interesting variables in terms of data `type`, number of unique observations, mean, distribution, etc.
+	\item Plotting the data, to visualise some of the relations in the dataset, is appreciated.
+	\item Describe the dataset using some of the techniques as discussed in week 1 and week 3. For example, apply topic modelling techniques to describe topics present in the dataset.
 \end{itemize}
 
-\section{Recommender system (20\% of final grade)}
+\section{Code to create a recommender system. (20\% of final grade)}
 
 Build a simple knowledge-based or content-based recommender system. 
 
 \begin{itemize}
-	\item Build a recommender system, based on the insights from week 6. It's up to you to decide whether you build a knowledge-based or content-based recommender system.
+	\item Build a recommender system, based on the insights from week 4. It's up to you to decide whether you build a knowledge-based or content-based recommender system.
 	\item Think about relevant features that you want to use in your algorithm design. Based on which features do you want to recommend content?
 \end{itemize}
 
@@ -65,7 +63,7 @@ Build a simple knowledge-based or content-based recommender system.
 Make sure your code is well documented and understandable for people that see your code for the first time. 
 
 \section{Handing in}
-One member of your group can hand in the group assignment until Friday, 20 May, 17:00 via \url{https://filesender.surf.nl}. Send this to your tutorial teacher: Include noon.abdulqadir@uva.nl as recipient. \textbf{Please compress all files into a single .zip or .tar.gz file and use GroupAssignment as subject line.} 
+One member of your group can hand in the group assignment until Friday, 12 May, 17:00 via \url{https://filesender.surf.nl}. Send this to your tutorial teacher: Include i.vanleeuwen@uva.nl as recipient. \textbf{Please compress all files into a single .zip or .tar.gz file and use GroupAssignment as subject line.} 
 
 Please include the following files:   
 \section*{File formats}
@@ -79,7 +77,6 @@ Please include the following files:
 \end{itemize}
 
 \emph{Note: You may, but do \textbf{not} have to create a shared (public) github repository where you store all code and documentation. In that case, please include the link to the github repository together with the written assignment to your tutorial teacher.}
-
 
 \textbf{Compress all files into one single .zip or .tar.gz file with your group name!}
 If you want to compress your files on Linux, you can do so as follows. Imagine you have a folder called '/home/anne/groupassignment' in which you have everything you want to hand in, you can do
