@@ -385,7 +385,7 @@ top_down = [[t.lower().count(f) for f in features] for t in texts]
 	\end{block}
 \end{frame}
 
-%\subsection{Better tokenization}
+\subsection*{Tokenization}
 
 \begin{frame}[fragile]{OK, good enough, perfect?}
 	\begin{block}{.split()}
@@ -447,7 +447,7 @@ fontsize=\scriptsize]
 \tiny{Notice the failure to split the \texttt{.} at the end of the first sentence in the second doc. That's because \texttt{TreebankWordTokenizer} expects \emph{sentences} as input. See book for a solution.\\}
 \end{frame}
 
-%\subsection{Stopword and punctuation removal}
+\subsection*{Stopword and punctuation removal}
 
 \begin{frame}
 	\textbf{Stopword removal} \\
@@ -525,9 +525,7 @@ tokenizer.tokenize("Hi students, what's up!")
 \end{minted}	
 \end{frame}
 
-
-%\subsection{Stemming and lemmatization}
-
+\subsection*{Stemming and lemmatization}
 
 \begin{frame}{Stemming and lemmatization}
 \begin{block}{Why do we need this?}
@@ -587,8 +585,10 @@ the dog be bark , the cat be play , the girl sing a song
 \end{minted}
 \end{frame}
 
-%\subsection{ngrams}
-\begin{frame}
+\subsection*{Ngrams}
+
+
+\begin{frame}{ngrams}
 	Instead of just looking at single words (unigrams), we can also use adjacent words (bigrams).
 \end{frame}
 
