@@ -79,12 +79,16 @@ What is CCS-2?
 \begin{frame}{About CCS-2} 
 
 What will we do in this course?	
-	\begin{itemize}
-		\item We discuss techniques in the lectures
-		\item We practice with techniques in the tutorials
+	\begin{itemize}[<+->]
+		\item We discuss techniques in the lectures (Mondays)
+		\item We practice with techniques in the tutorials (Tuesdays)
 		\item Graded assignments to master the techniques:
 		\begin{itemize}
 			\item Regular multiple choice questions (\(20\%\)) about the readings and techniques that we discuss
+			\begin{itemize}
+				\item 4 questions, in week 2, 3, 4, 6, 7, 8. 
+				\item \emph{total of 24 questions. 18 correct answers = full marks}
+			\end{itemize}
 			\item Coding challenge (group assignment): Get more experienced with the techniques and build a \emph{basic} recommender system
 			\begin{itemize}
 				\item Report (\(20\%\))
@@ -101,9 +105,9 @@ What will we do in this course?
 \begin{frame}{About CCS-2} 
 	
 Course set-up:
-\begin{itemize}
-	\item Lectures: Introduction to techniques used in computational communication science
-	\item Tutorial meetings: Lab sessions to learn how to work with these techniques
+\begin{itemize}[<+->]
+	\item \emph{Lectures}: Introduction to techniques used in computational communication science
+	\item \emph{Tutorial meetings}: Lab sessions to learn how to work with these techniques
 	\begin{itemize}
 		\item Possibility to ask questions about your code
 	\end{itemize}
@@ -116,20 +120,15 @@ Course set-up:
 	~~~~~~~~\url{https://github.com/uva-cw-ccs2/2223s2}
 \end{frame}
 
-
 \begin{frame}{About CCS-2} 
-	
-	How to stay informed and where to find all the materials? Regularly check:	
+How to stay informed and where to find all the materials? Regularly check:	
 	\begin{itemize}
 		\item The course Canvas page
 		\item Your email
 		\item The course Github page
 	\end{itemize}
-
 In addition, make sure that you read the course manual so that you know all the ins and outs of this course!
-
 \end{frame}
-
 
 
 \begin{frame}{Ready? Set? Go!} 
@@ -143,77 +142,51 @@ In addition, make sure that you read the course manual so that you know all the 
 \section{Text as data}
 
 \begin{frame}{Text as Data}
-	
-CCS-1: You learned how to...
-	\begin{itemize}
-	\item Work with Python, for example, you:
-	\begin{itemize}
-		\item Store text in json-files, csv-files etc.
-		\item Difference between a dict, a list, a string etc.
-		\item Work with data (e.g., creating a loop)
+	CCS-1: You learned how to...
+		\begin{itemize}
+		\item Work with Python, for example, you:
+		\begin{itemize}
+			\item Store text in json-files, csv-files etc.
+			\item Difference between a dict, a list, a string etc.
+			\item Work with data (e.g., creating a loop)
+		\end{itemize}
 	\end{itemize}
+	\end{frame}
+
+\begin{frame}{Text as Data: Analyzing text as a goal}
+	Studying text can teach us a lot about human behavior:
+	\begin{itemize}[<+->]
+	\item \dots to study the content cancer-related online platforms (e.g., \cite{sanders_different_2020})
+	\begin{itemize}
+	\item what \emph{topics} are being discussed on expert and peer-generated platforms?
+	\end{itemize}
+	\item \dots does content differ between online and print news? (e.g., \cite{burggraaff_through_2020})
+	\begin{itemize}
+	\item E.g., online, journalists are more likely to publish \emph{follow-up} articles.
+	\end{itemize}
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}{Text as Data: Analyzing text as a means}
+Studying text can give us information we can use to answer broader questions: 
+\begin{itemize}[<+->]
+	\item \dots analyze textual information about movies from IMDB to learn about the representation of women in movies (e.g.,\cite{poma-murialdo_gender_2019} )
+	\item \dots automatically distinguish between reliable and unreliable online information about vaccines 
+	by investigating what characterizes reliable and unreliable texts (e.g.,\cite{meppelink_reliable_2021})
 \end{itemize}
-	
 \end{frame}
-
-\begin{frame}{Text as Data: \small{Analyzing text as a goal}}
-	
-	Studying text can teach us a lot about human behavior: \\~
-	
-	What topics do people discuss on online cancer-related platforms? \\
-	\begin{tiny}
-		(\cite{sanders_different_2020}) \\
-	\end{tiny}
-
-	To what extent does content differ between online and print news? \\
-	\begin{tiny}
-	(\cite{burggraaff_through_2020}) \\
-	\end{tiny}
-
-	What topics do people discuss in their movie reviews? \\
-	\begin{tiny}
-	(\cite{schneider_what_2020}) \\
-	\end{tiny}	
-
-\end{frame}
-
-
-\begin{frame}{Text as Data: \small{Analzing text as a means}}
-	
-	Studying text can give us information we can use to answer broader questions: \\~
-	
-	Analyze textual information about movies from IMDB to learn about the representation of women in movies \\
-	\begin{tiny}
-	(\cite{poma-murialdo_gender_2019}) \\
-	\end{tiny}
-
-	Automatically distinguish between reliable and unreliable online information about vaccines by investigating what characterizes reliable and unreliable texts \\
-	\begin{tiny}
-	(\cite{meppelink_reliable_2021}) \\
-	\end{tiny}	
-	
-	
-\end{frame}
-
-
-\begin{frame}{Text as Data: \small{Combining text analysis with other methods}}
-	
-	We can use data about text in combination with other methods: \\~
-	
-	Combining data about media content and survey data to investigate how media coverage affects citizens' trust in the EU \\
-	\begin{tiny}
-		(\cite{brosius_trust_2019}) \\
-	\end{tiny}
-	
-	
-\end{frame}
-
 
 \begin{frame}{Text as data: NLP}
-	
-	"\textbf{Natural language processing (NLP)} refers to the branch of computer science — and more specifically, the branch of artificial intelligence or AI — concerned with giving computers the ability to understand text and spoken words in much the same way human beings can."  \\
-	\tiny{(IBM, 2020)}
+\alert{Natural language processing (NLP)} refers to the branch of computer science — and more specifically, the branch of artificial intelligence or AI — concerned with giving computers the ability to understand text and spoken words in much the same way human beings can."  \\
+\tiny{(IBM, 2020)}
+
+\\ \\
+
+
+Watch this Ted talk for some inspiration if you like: 
+\url{https://www.ted.com/talks/jean_baptiste_michel_erez_lieberman_aiden_what_we_learned_from_5_million_books}
 \end{frame}
+
 
 \section{The toolkit}
 \subsection{Bottom-up vs. top-down}
@@ -385,7 +358,7 @@ top_down = [[t.lower().count(f) for f in features] for t in texts]
 	\end{block}
 \end{frame}
 
-\subsection*{Tokenization}
+%\subsection*{Tokenization}
 
 \begin{frame}[fragile]{OK, good enough, perfect?}
 	\begin{block}{.split()}
@@ -447,7 +420,7 @@ fontsize=\scriptsize]
 \tiny{Notice the failure to split the \texttt{.} at the end of the first sentence in the second doc. That's because \texttt{TreebankWordTokenizer} expects \emph{sentences} as input. See book for a solution.\\}
 \end{frame}
 
-\subsection*{Stopword and punctuation removal}
+%\subsection*{Stopword and punctuation removal}
 
 \begin{frame}
 	\textbf{Stopword removal} \\
@@ -525,7 +498,7 @@ tokenizer.tokenize("Hi students, what's up!")
 \end{minted}	
 \end{frame}
 
-\subsection*{Stemming and lemmatization}
+%\subsection*{Stemming and lemmatization}
 
 \begin{frame}{Stemming and lemmatization}
 \begin{block}{Why do we need this?}
@@ -549,7 +522,7 @@ tokenizer.tokenize("Hi students, what's up!")
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Stemming and Lemmatizing}
+%\begin{frame}[fragile]{Stemming and Lemmatizing}
 \begin{minted}[%
 	breaklines,
 	linenos,
@@ -585,8 +558,7 @@ the dog be bark , the cat be play , the girl sing a song
 \end{minted}
 \end{frame}
 
-\subsection*{Ngrams}
-
+%\subsection*{Ngrams}
 
 \begin{frame}{ngrams}
 	Instead of just looking at single words (unigrams), we can also use adjacent words (bigrams).
