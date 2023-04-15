@@ -1,3 +1,5 @@
+
+
 \section{From text to features: vectorizers}
 
 \subsection{General idea}
@@ -132,7 +134,7 @@ Counter({'is': 3, 'test': 3, 'This': 1, 'this': 1, 'a': 1})
 {\setbeamercolor{background canvas}{bg=black}
 	\begin{frame}
 		\makebox[\linewidth]{
-			\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{../pictures/sparse_dense.png}}
+			\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{sparse_dense.png}}
 		\url{https://matteding.github.io/2019/04/25/sparse-matrices/}
 	\end{frame}
 }
@@ -164,8 +166,6 @@ cv = CountVectorizer()
 dtm_sparse = cv.fit_transform(docs)
 \end{minted}
 \end{frame}
-
-
 
 
 \begin{frame}{OK, good enough, perfect?}
